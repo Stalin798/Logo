@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stalin</title>
+</head>
+
+<body ontouchstart = "touchstart(event)"
+ontouchmove = "touchmove(event)"
+ontouchend = "touchend()">
+  <script>
+    var startingX , startingY , movingX , movingY;
+    function touchstart(evt){
+      startingX = evt.touches[0].clientX;
+      startingY = evt.touches[0].clientY;
+    }
+    function touchmove(evt){
+      movingX = evt.touches[0].clientX;
+      movingY = evt.touches[0].clientY;
+    }
+    function touchend() {
+      if(startingX +100 < movingX){
+        document.write("right");
+      }else if(startingX -100 > movingX){
+        document.write("left");
+      }
+      if(startingY +100 < movingY){
+        document.write("down");
+      }else if(startingY -100 > movingY){
+        document.write("up");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

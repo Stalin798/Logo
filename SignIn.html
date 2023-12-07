@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .count{
+      position: relative;
+      width: 300px;
+      height: 400px;
+      box-shadow: rgba(100,10,100,0.8)0 7px 29px 0;
+      left: 50px;
+      top: 50px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    #logo{
+      position: relative;
+      top: 10px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bolder;
+      color: blue;
+    }
+    .input{
+      position: relative;
+     text-align:center;
+    }
+    .input input{
+      padding: 6px;
+      border-radius: 30px;
+      outline: none;
+    }
+    .button{
+      position: relative;
+      text-align: center;
+    }
+    .button #sub{
+      border-radius: 30px;
+      padding: 10px;
+      width: 100px;
+    }
+    input[type] {
+      color: green;
+    }
+    input::placeholder {
+      text-align: center;
+      color: red;
+    }
+    .box{
+      position: relative;
+      bottom:80px;
+      left: 80%;
+    }
+    .stalin{
+      background-image: url("/Stalin/26900_79.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "count">
+    <div id = "logo">
+      Sign In
+    </div><br><br>
+<div class = "input">
+  <input type = "text" placeholder="Enter your first name"><br><br>
+  <input type = "text" placeholder="Enter your last name"><br><br>
+  <input type = "email" placeholder="Enter your Email"><br><br>
+  <input type = "password" placeholder="Enter your password" id = "password"><br><br>
+  <input type = "password" placeholder="Enter confirm password" id = "PASSWORD"><br><br>
+</div><br>
+<div class = "box">
+  <input type = "checkbox" id = "check">
+</div>
+<div class = "button">
+  <button id = "sub">Submit</button>
+</div>
+</div>
+
+<script>
+  let password = document.getElementById("password");
+  let PASSWORD = document.getElementById("PASSWORD");
+  let check = document.getElementById("check");
+  
+  check.onclick = function(){
+    if(password.type == "password"){
+      password.type = "text";
+      PASSWORD.type = "text";
+    }else{
+      password.type ="password";
+      PASSWORD.type = "password";
+    }
+  }
+  let sub = document.getElementById("sub");
+  
+  sub.onclick = function(){
+    alert("Sign In completed Successfully");
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: gray;
+      color: white;
+      padding: 10px;
+    }
+    #logo{
+      position: relative;
+      left: 10px;
+    }
+    .nav{
+      position: relative;
+      left: 10px;
+    }
+    .nav ul{
+      display: flex;
+    }
+    .nav ul li{
+      list-style: none;
+      margin-right: 10px;
+    }
+    .para{
+      position: relative;
+      text-align: center;
+      color:white;
+    }
+    .para font{
+      font-weight: bolder;
+    }
+    .login{
+      position: relative;
+      top: 12px;
+      left:29%;
+    }
+    .sign{
+      position: relative;
+      bottom: 15px;
+      left: 55%;
+    }
+    .login #but{
+      border-radius: 40px;
+      border-color: blueviolet;
+      width: 80px;
+      align-items: center;
+      background-color: transparent;
+      color:white;
+      padding: 5px;
+    }
+    .sign #sign{
+      border-radius: 40px;
+      border-color: blueviolet;
+      width: 80px;
+      align-items: center;
+      background-color: transparent;
+      color:white;
+      padding: 5px;
+    }
+    .count{
+      background-image: url("/Stalin/26753_79.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+    html,body{
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class = "count">
+  <header>
+    <div id = "logo">
+      Logo
+    </div>
+    <div class = "nav">
+      <ul>
+        <li id = "home">Home</li>
+        <li id = "menu">Menu</li>
+        <li id = "about">About</li>
+        <li id = "login">Login</li>
+      </ul>
+    </div>
+  </header>
+  <br>
+  <div class = "para">
+    <p id = "graph"><font color = "red">Hello Viewers</font>, Thankyou for visiting my website.<br>
+         You are very luckiest person in the world.<br>   Because you visiting my website.</p>
+  </div>
+  <div class = "login">
+    <button id = "but"><a href = "/login.html">Login</a></button>
+  </div>
+  <div class = "sign">
+    <button id = "sign"><a href = "/SignIn.html">Sign in</a></button>
+  </div>
+  </div>
+  <script>
+    let button = document.getElementById("sign");
+    button.onclick = function(){
+      
+    }
+  </script>
+</body>
+
+</html>
